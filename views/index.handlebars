@@ -1,0 +1,32 @@
+<div class="container my-4">
+  <div class="col-12 col-md-12 col-lg-12">
+    <div class="col-6 col-md-6 col-lg-6" style="background-color:green;">
+      {{#each burgers}}
+      {{#unless this.devoured}}
+      <div>
+        <p>{{burger_name}}</p>
+          <button class="eat-btn" data-id="{{id}}">EAT</button>
+      </div>
+      {{/unless}}
+      {{/each}}
+    </div>
+    <div class="col-6 col-md-6 col-lg-6" style="background-color:blue;">
+      {{#each burgers}}
+      {{#if this.devoured}}
+      <p>{{burger_name}}</p>
+      {{/if}}
+      {{/each}}
+    </div>
+  </div>
+
+  <h2>Add a Burger</h2>
+  <form class="create-form">
+
+    <div class="form-group">
+      <label for="burger">Burger Name:</label>
+      <input type="text" id="burger" name="name">
+    </div>
+
+    <button type="submit">Add Cat</button>
+  </form>
+</div>
