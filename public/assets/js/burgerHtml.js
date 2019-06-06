@@ -1,7 +1,7 @@
 $(function () {
     $(".create-form").on("submit", function (event) {
         console.log("----------form");
-        event.preventDefault;
+        event.preventDefault();
 
         var newBurger = {
             burger_name: $("#burger").val().trim(),

@@ -9,7 +9,7 @@ p, h2 {
     text-shadow: 2px 2px 3px #0000007e;
 }
 
-.eat-btn{
+.eat-btn, .submit-btn{
     font-size: 20px !important;
     padding: 5px 30px 5px 30px !important;
     border-radius: 20px !important;
