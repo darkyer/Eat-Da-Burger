@@ -10,17 +10,27 @@
 	<title>Eat-Da-Burger</title>
 
 	{{!-- Bootstrap --}}
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.2/css/mdb.min.css" rel="stylesheet">
 
 	{{!-- jquery --}}
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="/assets/js/burgerHtml.js"></script>
+
+	{{!-- Google fonts --}}
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 </head>
 
 <body>
+	<div class="container my-4">
 
-	{{{ body }}}
+		<div class="col-12 col-md-12 col-lg-12 text-center my-4">
+			<img src="/assets/images/title.png" class="title img-fluid" alt="Friend Finder">
+		</div>
+
+		{{{ body }}}
+
+	</div>
 
 </body>
 

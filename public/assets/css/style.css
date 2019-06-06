@@ -1,0 +1,56 @@
+body{
+    background-image: url("../images/bg.jpg");
+}
+
+p, h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color:white;
+    text-shadow: 2px 2px #0000007e;
+}
+
+.eat-btn{
+    font-size: 20px !important;
+    padding: 5px 30px 5px 30px !important;
+    border-radius: 20px !important;
+    font-weight: 800 !important;
+    text-shadow: 2px 2px #00000033;
+}
+
+h2{
+    font-weight: 800;
+}
+
+.food-container{
+    background-color: #169b5b;
+}
+
+#burger{
+    width:50%;
+}
+
+/* same height columns styles */
+.row.display-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row.display-flex > [class*='col-'] {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* centered columns styles */
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
+    text-align: center;
+}
